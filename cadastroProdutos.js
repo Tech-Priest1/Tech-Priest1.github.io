@@ -26,50 +26,50 @@ const dropArea = document.querySelector(".drag-area"),
 dragText = dropArea.querySelector("header"),
 button = dropArea.querySelector("button"),
 input = dropArea.querySelector("input");
-let file; //variavel global 
+let file;
 
 button.onclick = ()=>{
-  input.click(); //se o botão foi clickado input também sera clickado
+  input.click(); 
 }
 
 input.addEventListener("change", function(){
-  //recebendo o arquivo do usuário, files[0] significa que só receberemos o primeiro arquivo
+ 
   file = this.files[0];
   dropArea.classList.add("active");
-  showFile(); //chamando a função
+  showFile(); 
 });
 
 
-//If user Drag File Over DropArea
+
 dropArea.addEventListener("dragover", (event)=>{
-  event.preventDefault(); //prevenindo default behaviour
+  event.preventDefault();
   dropArea.classList.add("active");
   dragText.textContent = "Solte a imagem Para enviar arquivo";
 });
 
-//If user leave dragged File from DropArea
+
 dropArea.addEventListener("dragleave", ()=>{
   dropArea.classList.remove("active");
   dragText.textContent = "Arraste & solte a imagem aqui para fazer upload";
 });
 
-//If user drop File on DropArea
+
 dropArea.addEventListener("drop", (event)=>{
-  event.preventDefault(); //prevenindo default behaviour
-  //selecionando o arquivo do usuário [0] significa que se tiver varios arquivos só receberemos o primeiro
+  event.preventDefault(); 
+  
   file = event.dataTransfer.files[0];
-  showFile(); //chamando a função
+  showFile(); 
 });
 
 function showFile(){
-  let fileType = file.type; //pegando o tipo de arquivo selecionado
-  let validExtensions = ["image/jpeg", "image/jpg", "image/png"]; //um array com os formatos de imagem validos
-  if(validExtensions.includes(fileType)){ //se o arquivo do usuário é uma imagem
+  let fileType = file.type; 
+  let validExtensions = ["image/jpeg", "image/jpg", "image/png"]; 
+  if(validExtensions.includes(fileType)){ 
     let fileReader = new FileReader(); 
     fileReader.onload = ()=>{
       let fileURL = fileReader.result; 
-      let imgTag = `<img src="${fileURL}" alt="">`; //criando uma img tag e passando a source da imagem para um src attribute
-      dropArea.innerHTML = imgTag; //adicionando a img tag criada dentro de dropArea container
+      let imgTag = `<img src="${fileURL}" alt="">`; 
+      dropArea.innerHTML = imgTag; 
     }
     fileReader.readAsDataURL(file);
   }else{

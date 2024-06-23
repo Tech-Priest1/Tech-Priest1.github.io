@@ -1,0 +1,556 @@
+html {
+    color-scheme: dark !important;
+}
+body {
+    margin: 0;
+    font-family: "Lalezar", system-ui;;
+    background-color: #16161A;
+    height: auto;
+    width: auto;
+    color: #fffffe;
+  }
+/*↓↓↓Barra de Navegação↓↓↓*/
+.navbar ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 8%;
+    background-color:#010101;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+  
+.navbar li a {
+    display: block;
+    color: #010101;
+    padding: 8px 16px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1,1);
+    transform: translateZ(0) scale(1,1) ;
+    -webkit-transition:all .1s linear;
+    transition:all .1s linear;
+    
+  }
+  
+.navbar  li a.active {
+    background-color: #28282985;
+    color: #fffffe;
+  }
+  
+.navbar  li a:hover:not(.active) {
+    background-color: #7f5af0;
+    color: #fffffe;
+    transform: scale(1.1); 
+   
+}
+
+    
+.navbar a:hover,a:focus {
+    text-decoration:none;
+}
+  
+.navbar .sub-menu{
+    position: relative;
+    
+}
+.navbar .iconeMain{
+    width:  80px;
+    height: 80px;
+    padding-left: 20px;
+  
+}
+
+
+.navbar .iconeLeftNavbar {
+    width: 45px;
+    height: 45px;
+}
+
+.nav-text {
+    position: fixed;
+    vertical-align:middle;
+    width:20px;   
+}
+li a .animated-span {
+    transform: translatex(100%);
+    color: #fffffe;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 20px;
+    padding: 12% 65px;
+}
+
+li a {
+    position: relative;
+    width: 90%;
+}
+
+li a:hover .animated-span {
+    transform: translatex(0%);
+}
+
+.cadastroDeVenda{
+    margin: 0 0 20px 0;
+}
+
+#valorVenda{
+    width: 283px;
+    border: 3px solid #94A1B2;
+    padding: 0 0 0 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#indiceExclusao{
+    width: 141px;
+    border: 3px solid #94A1B2;
+    padding: 0 0 0 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.cadastroDeVenda p{
+    font-family: "Lalezar", system-ui;;
+    color: #94A1B2;
+    font-size: x-large;
+    margin: 0 0 5px 0;
+}
+
+
+span {
+    transition: 400ms;
+} 
+/*↓↓↓Posição dos Botões e conteudoPrincipal para usar em <NAV> ou <DIV>↓↓↓*/
+.conteudoPrincipal {
+    margin-left: 8%; /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
+    padding: 1px 16px;
+    box-sizing: border-box;
+}
+.botoesIndex{ /*Essa classe controla as posções dos botões do index NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+  margin-left: 50%;
+  padding-top: 5%;
+  padding-left: 15%;
+}
+.botoesPrecos{
+  margin-left: 50%; /*Essa classe controla as posções dos botões de Preços NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+  padding-left: 15%;
+  margin-top: -3%;
+  
+}
+.botoesNF{
+    margin-left: 20%; /*Essa classe controla as posções dos botões de NotasFiscais NÃO REMOVER A MARGIN ou background dos botões ira sobrepor a barra de navegação*/
+    margin-top: -3%;
+    padding-left: 10%;
+}
+.tituloPage{
+    padding-top: -10%;
+    padding-left: -70%; 
+}
+
+
+/*↓↓↓Index.html e aparência dos Botões↓↓↓*/
+.retangulo-cinza{
+    background-color: #1C1C20;
+    height: 25px;
+    width: 100%
+}
+  
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 8% 10% 0 0;
+}
+
+.btn-custom{
+    font-family: "Lalezar", system-ui;;
+    color:#94a1b2;
+    background-color: #1C1C20;
+    border: 2px solid #000;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 900;
+    transition: background-color 0.3s;
+    margin-left: 7px;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+}
+
+.btn-custom:hover {
+    color: #000;
+    background-color: #94a1b2; /* Cor cinza escuro ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+}
+
+.info-vendas {
+    color:#94a1b2;
+    background-color: #16161A;
+    padding: 20px;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    width: 300px;
+    margin: 5% 0 0 64%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-vendas p {
+    margin: 5px 0;
+}
+
+.info-vendas .titulo-do-circulo{
+    font-size: medium;
+    font-weight: 800;
+    margin: 0;
+}
+
+.info-vendas .valor-do-circulo{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin:0;
+    
+}
+
+.info-vendas .total-de-vendas{
+    font-size: 0.8rem;
+    font-weight: 900;
+    margin:-6.2% 0% 0% 9%;
+    
+}
+
+.retangulo-cinza{
+  background-color: #1C1C20;
+  height: 25px;
+  width: 100%
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*↓↓↓Produtos.html↓↓↓*/
+.navegacaoProdutosMain{
+    padding-left: 250px;
+    margin-top: 35px;
+}
+
+.navegacaoProdutosMain a{
+    color:#fefefe;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 20px;
+}
+.navegacaoProdutosMain li{
+    float:inline-start;
+    color:#94a1b2;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 15px 20px;
+    overflow: hidden;    
+          
+}
+
+.IconeProdutosMain{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -40px;
+    -webkit-filter: invert(50%);
+    filter: invert(50%);  
+    padding-right: 5px;  
+}
+.navegacaoProdutosMain a img:hover{
+    -webkit-filter:invert(33%) sepia(86%) saturate(2237%) hue-rotate(238deg) brightness(99%) contrast(91%);
+    filter:invert(33%) sepia(86%) saturate(2237%) hue-rotate(238deg) brightness(99%) contrast(91%);
+}
+
+.navegacaoProdutosMain li a:hover:not(.active) {
+    color:  #7f5af0;   
+}
+.navegacaoProdutosMain li a.active {
+    color: #fffffe;     
+}
+
+.navegacaoProdutosMain li a:hover:not(.active) {
+    color: #7f5af0;
+}
+
+.navegacaoProdutosMain li a.active {
+    color: #fffffe;
+}
+
+.dropdown-Menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-Menu li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-Menu li a {
+    color: black;
+}
+
+.dropdown-Menu li a:hover {
+    background-color: #f1f1f1;
+}
+.totalizantes{
+    padding-top: 40px;
+    margin-left: -14%;
+    margin-right: -80px;
+       
+}
+.titulosResultados{
+    color:#94a1b2;
+}
+.resultadosProd{
+    color: #2cb67d;
+}
+.titulosResultados, .resultadosProd {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+   
+}
+.tituloResultadoProd, .resultadoProd {
+    margin: 0 10px;
+}
+/*↓↓↓CadastroProdutos.html↓↓↓*/
+.navegacaoProdutos ul {
+ list-style-type: none;
+ padding-left: 360px;
+ margin-top: 50px;
+ overflow: hidden;
+}
+.navegacaoProdutos a{
+    color:#fefefe;
+    text-decoration: none;
+    padding: 20px 40px;
+    text-align: center;
+       
+}
+.navegacaoProdutos li{
+    float:left;
+    color:#94a1b2;
+    background-color: #1C1C20;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    padding: 15px 20px;
+   
+}
+.navegacaoProdutos li a:hover:not(.active) {
+    color: #7f5af0;
+  
+  
+}
+.navegacaoProdutos li a.active {
+    background-color: #28282985;
+    color: #fffffe;
+}
+.preencher-produtos{
+    padding: 12px;
+    border-radius: 5px;
+    width: 400px;
+    border: 1px solid #1C1C20;
+    background-color: #1C1C20;
+    color: #fffffe;
+    margin-left: 300px;
+    padding: 20px;
+}
+.label-cadastro{
+    display:flex;
+    flex-direction:column;
+    margin-left: 300px;
+    padding: 20px;
+}
+.preencher-produtos:focus{
+    outline: 2px solid #7f5af0;
+  }
+.direcao-preencherProdutos{
+    margin-left: 600px;  
+    margin-top:-350px;
+}
+
+.reduzirDistancia{
+    margin-bottom: -112px;
+}
+.esconder{
+display: none;
+}
+.botoesProduto{
+    padding-top: 300px;
+    margin-left: 20%;
+    margin-right: 14%;
+
+}
+.btnCprodutos{
+    font-family: "Lalezar", system-ui;;
+    color:#94a1b2;
+    background-color: #1C1C20;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 900;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+  
+}
+.btnCProdutos1, .btnCProdutos2 {
+    display: block;
+}
+.btnCProdutos1{
+    float: left; 
+    font-size : 15px;
+}
+.btnCProdutos2{
+    float: right;
+    font-size : 14px;     
+}
+.btnCprodutos:hover {
+    color: #000;
+    background-color: #94a1b2; 
+    transform: scale(1.05); /* Aumenta o tamanho do botão em 5% */
+}
+
+.imagemConfig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    min-width: 800px;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-bottom: -240px;
+}
+.drag-area{
+    border: 2px dashed #7f5af0;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.drag-area .tamanho{
+    width: 100px;
+    height: 100px;
+ }
+.drag-area.active{
+    border: 3px solid #7f5af0;
+}
+.drag-area .icon{
+    font-size: 100px;
+    color: #94a1b2;
+}
+.drag-area header{
+    font-size: 30px;
+    font-weight: 500;
+    color: #94a1b2;
+ }
+.drag-area span{
+    font-size: 25px;
+    font-weight: 500;
+    color: #94a1b2;
+    margin: 10px 0 15px 0;
+}
+.drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background: #1C1C20;
+    color: #94a1b2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.drag-area img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+  
+
+
+/*↓↓↓notasFiscais.html↓↓↓*/
+.Espacamento{
+    margin-right: 250px;
+}
+.barraDeDetalhamentos ul {
+    list-style-type: none;
+    padding-left: 70px;
+    margin-left: 8% ;
+    padding-top: 40px;
+    margin-top: 50px;
+    overflow: hidden;
+    width: 80%;
+   }
+   .barraDeDetalhamentos a{
+       color:#94a1b2;
+       text-decoration: none;
+       padding: 20px 20px;
+       text-align: center;
+
+   }
+   .barraDeDetalhamentos li{
+       float:left;
+       color:#999999;
+       background-color: #1C1C20;
+       cursor: pointer;
+       transition: background-color 0.3s; 
+       padding: 15px 20px;
+    }
+    .infoNotasFiscais {
+        margin-left: 8%; /*esse elemento div tem uma margem esquerda de 20%. porque a navegação lateral estar definida para uma largura de 8%. não remover a margem ou a navegação lateral irá sobrepor desta div*/
+        padding: 1px 16px;
+        box-sizing: border-box;
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .infoNotasFiscais {
+        padding-left: 50px;
+
+    }
+    .tituloResultadoNF {
+        color: #94a1b2;
+    }
+    .resultadoNF {
+        color: #2cb67d;
+    }
+    .direcaoResultadoNf {
+        margin-left: 1200px; 
+        margin-top: -180px;
+    }
+    .botoesProduto-nf{
+        padding-top: 400px;
+        margin-left: 20%;
+        margin-right: 14%;
+    
+    }

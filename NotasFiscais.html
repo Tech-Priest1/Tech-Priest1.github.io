@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="svg/Controle fácil.png" type="image/x-icon">
+    <title>Notas Fiscais</title>
+</head>
+<header class="navbar">
+    <ul>
+        <li class="sub-menu">
+            <a href="#"><img class="iconeMain" src="svg/Controle fácil.png" alt="início">
+            </a>
+        </li>
+        <li  class="sub-menu ">
+            <a href="Index.html"><img class="iconeLeftNavbar" src="svg/Casa.png" alt="Início">
+                <span class="nav-text animated-span">Inicio</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a href="Produtos.html"><img class="iconeLeftNavbar" src="svg/Caminhao.png" alt="Produtos">
+                <span class="nav-text animated-span" >Produtos</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a href="Relatorio.html"><img class="iconeLeftNavbar" src="svg/Grafico.png" alt="Relatórios">
+                <span class="nav-text animated-span" >Relatórios</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a class="active" href="NotasFiscais.html"><img class="iconeLeftNavbar" src="svg/nota.png" alt="Notas Fiscais">
+                <span  class="nav-text animated-span">Notas(NF)</span>
+            </a>
+        </li>
+    </ul>   
+</header>
+<body>
+    <div class="conteudoPrincipal">
+        <h1 class="tituloPage">Notas Fiscais</h1>
+    </div>
+    <div>
+        <div class="botoesNF" class="btn">
+            <button class = "btn-custom" id="btnNovaVenda">Emitir NF-e Avulsa</button>
+            <button class = "btn-custom">Emitir NFC-e Avulsa</button>
+            </div> 
+
+    </div>
+    <div class="navegacaoProdutosMain">
+        <ul>
+            <li>
+                <a href="#.html"><img class="IconeProdutosMain" src="svg/filter.png" alt="Filtros">
+                    Filtros  
+                </a>
+            </li>
+        </ul>
+    </div>
+    <nav class="barraDeDetalhamentos">
+        <ul>
+            <li>
+                <a class="Espacamento">Número   
+                </a>
+            </li>
+            <li>
+                <a >Status   
+                </a>
+            </li>
+            <li>
+                <a >Modelo   
+                </a>
+            </li>
+            <li>
+                <a >Data/Hora  
+                </a>
+            </li>
+            <li>
+                <a >Cliente/Fornecedor       
+                </a>
+            </li>
+            <li >
+                <a>Valor
+                </a>
+            </li>
+            <li>
+                <a >Lançamento
+                </a>
+            </li>
+            <li>
+                <a >Observação  
+                </a>
+            </li>
+        </ul>   
+    </nav>
+    <div class= "botoesProduto-nf">
+        <div>  
+        <button class="btnCprodutos btnCProdutos1">Voltar</button>
+        <a  class="btnCprodutos btnCProdutos2" href="#">Próximo
+        </a>
+        </div> 
+    </div>
+    <div class="infoNotasFiscais">
+        <h1>Valores totais de notas emitidas</h1>
+        <h2 class="tituloResultadoNF">saida</h2>
+        <h1 class="resultadoNF"> 0 </h1>
+    </div>
+    <div class="infoNotasFiscais direcaoResultadoNf">
+        <h2 class="tituloResultadoNF">Entrada</h2>
+        <h1 class="resultadoNF"> 0 </h1>
+    </div>
+<script src="/JAVASCRIPT/index.js"></script>
+
+</body>
+</html>

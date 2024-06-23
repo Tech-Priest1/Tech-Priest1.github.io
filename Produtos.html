@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="svg/Controle fácil.png" type="image/x-icon">
+    <title>Produtos</title>
+</head>
+<header class="navbar">
+    <ul>
+        <li class="sub-menu">
+            <a href="#"><img class="iconeMain" src="svg/Controle fácil.png" alt="início">
+            </a>
+        </li>
+        <li  class="sub-menu ">
+            <a href="Index.html"><img class="iconeLeftNavbar" src="svg/Casa.png" alt="Início">
+                <span class="nav-text animated-span">Inicio</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a class="active" href="Produtos.html"><img class="iconeLeftNavbar" src="svg/Caminhao.png" alt="Produtos">
+                <span class="nav-text animated-span" >Produtos</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a href="Relatorio.html"><img class="iconeLeftNavbar" src="svg/Grafico.png" alt="Relatórios">
+                <span class="nav-text animated-span" >Relatórios</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a href="NotasFiscais.html"><img class="iconeLeftNavbar" src="svg/nota.png" alt="Notas Fiscais">
+                <span  class="nav-text animated-span">Notas(NF)</span>
+            </a>
+        </li>
+    </ul>   
+</header>
+
+<body>  
+    <div class="conteudoPrincipal">
+        <h1 class="tituloPage">Produtos</h1>
+    </div>
+    <div class="conteudoPrincipal">
+   
+        <div class="botoesPrecos">
+            <a class = "btn-custom" href="cadastroProdutos.html">Cadastrar Produtos</a>
+        </div>
+    </div>
+        <nav class="navegacaoProdutosMain">
+            <ul>
+                <li>
+                    <a href="#.html"><img class="IconeProdutosMain" src="svg/filter.png" alt="Filtros">
+                    Filtros  
+                    </a>
+                </li>
+                <li>
+                    <a href="#.html"><img style class="IconeProdutosMain" src="svg/tag.png" alt="Etiquetas">
+                    Etiquetas
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img class="IconeProdutosMain" src="svg/book.png" alt="Catálogos">
+                    Catálogos      
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="mostrarMais"><img class="IconeProdutosMain" src="svg/MoreActions.svg" alt="Mais ações"> Mostrar Mais</a>
+                    <ul class="dropdown-Menu esconder" id="dropdownMenu">
+                        <li><a href="#">Reajustar Preço de Vendas</a></li>
+                        <li><a href="#">Reajustar NCM/CEST</a></li>
+                        <li><a href="#">Reajustar Categorias</a></li>
+                        <li><a href="#">Atualizar Peso e Dimensões</a></li>
+                        <li><a href="#">Reajustar Marca</a></li>
+                        <li><a href="#">Atualizar Imagem</a></li>
+                        <li><a href="#">Excluir Selecionados</a></li>
+                    </ul>
+                </li>
+            </ul>   
+        </nav>
+        <nav class="barraDeDetalhamentos">
+            <ul>
+                <li>
+                    <a class="Espacamento">Produtos   
+                    </a>
+                </li>
+                <li>
+                    <a >Categoria   
+                    </a>
+                </li>
+                <li>
+                    <a >Preço(R$)   
+                    </a>
+                </li>
+                <li>
+                    <a >Estoque
+                    </a>
+                </li>
+                <li>
+                    <a >Custo      
+                    </a>
+                </li>
+                <li >
+                    <a>EstoqueMínimo
+                    </a>
+                </li>
+                <li>
+                    <a >Fornecedor
+                    </a>
+                </li>
+                <li>
+                    <a >NCM
+                    </a>
+                </li>
+            </ul>   
+        </nav>
+        <div class= "botoesProduto-nf">
+            <div>  
+            <button class="btnCprodutos btnCProdutos1">Voltar</button>
+            <a class="btnCprodutos btnCProdutos2" href="#">Próximo</a>
+            </div> 
+            <div class="totalizantes"> 
+                <h1>Totalizantes</h1>
+                <div class="titulosResultados">
+                    <h2 class="tituloResultadoProd">Total de Produtos Cadastrados</h2>
+                    <h2 class="tituloResultadoProd">Total de Produtos em Estoque</h2>
+                    <h2 class="tituloResultadoProd">Valor de Custo em Estoque</h2>
+                    <h2 class="tituloResultadoProd">Valor de Venda em Estoque</h2>
+                </div>
+                <div class="resultadosProd">
+                    <h1 class="resultadoProd">0</h1>
+                    <h1 class="resultadoProd">0</h1>
+                    <h1 class="resultadoProd">R$ 0,00</h1>
+                    <h1 class="resultadoProd">R$ 0,00</h1>
+                </div>
+            </div>
+            <script src="JAVASCRIPT/cadastroProdutos.js"></script>   
+</body>
+</html>

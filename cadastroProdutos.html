@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="svg/Controle fácil.png" type="image/x-icon">
+    <title>Cadastrar Produtos</title>
+</head>
+<header class="navbar">
+    <ul>
+        <li class="sub-menu">
+            <a href="#"><img class="iconeMain" src="svg/Controle fácil.png" alt="início">
+            </a>
+        </li>
+        <li  class="sub-menu ">
+            <a href="Index.html"><img class="iconeLeftNavbar" src="svg/Casa.png" alt="Início">
+                <span class="nav-text animated-span">Inicio</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a class="active" href="Produtos.html"><img class="iconeLeftNavbar" src="svg/Caminhao.png" alt="Produtos">
+                <span class="nav-text animated-span" >Produtos</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a href="Relatorio.html"><img class="iconeLeftNavbar" src="svg/Grafico.png" alt="Relatórios">
+                <span class="nav-text animated-span" >Relatórios</span>
+            </a>
+        </li>
+        <li class="sub-menu">
+            <a href="NotasFiscais.html"><img class="iconeLeftNavbar" src="svg/nota.png" alt="Notas Fiscais">
+                <span  class="nav-text animated-span">Notas(NF)</span>
+            </a>
+        </li>
+    </ul>   
+</header>
+
+<body>  
+    <div class="conteudoPrincipal">
+        <h1 class="tituloPage">Cadastro de Produtos</h1>
+    </div>
+
+    <nav class="navegacaoProdutos">
+    <ul>
+        <li>
+            <a id="Form1" src="">Informações Gerais   
+            </a>
+        </li>
+        <li>
+            <a  id="Form2" src="">Valores  
+            </a>
+        </li>
+        <li>
+            <a id="Form3" src="">Estoque         
+            </a>
+        </li>
+        <li >
+            <a id="Form4" src="">Imagens   
+            </a>
+        </li>
+        <li>
+            <a id="Form5" src="">Peso e Dimensões
+            </a>
+        </li>
+        <li> 
+            <a id="Form6" src="">Dados Fiscais  
+            </a>
+        </li>
+    </ul>   
+</nav>
+   <form >
+    <div class="conteudoPrincipal">
+    <div  id="informaçõesGerais">
+        <div >
+            <label class="label-cadastro" for="NomeProduto">Nome do Produto</label>
+            <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:Camisa Vermelha" required>
+        </div>
+        <div >
+            <label class="label-cadastro" for="NomeProduto">Tipo de Unidade</label>
+            <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:Camisa" required>
+        </div>
+        <div >
+            <label class="label-cadastro" for="NomeProduto">Fornecedor</label>
+            <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:VLI MULTIMODAL SA" required>
+        </div>
+        <div class="direcao-preencherProdutos">
+            <label class="label-cadastro" for="NomeProduto" >Marca</label>
+            <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:Riachuelo" required>
+            <label class="label-cadastro" for="NomeProduto">Categoria de Produto</label>
+            <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:Roupa" required>
+        </div>
+    </div >
+    <div  id="valores" class="esconder">
+        <div class="reduzirDistancia">
+            <label class="label-cadastro" for="NomeProduto">Valor de Custo</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="ValorCusto" placeholder="0.00" required>
+            <label class="label-cadastro" for="NomeProduto">Margin de Lucro</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="MargeLucro" placeholder="%" required>
+            <label class="label-cadastro" for="NomeProduto" >Valor de Venda</label>
+            <input type="number"  min="1" max="100" id="myPercent" class="preencher-produtos " name="lucro" placeholder="0.00" required>
+        </div>
+    </div >
+    <div  id="Estoque" class="esconder">
+        <div class="reduzirDistancia">
+            <label class="label-cadastro" for="NomeProduto">Estoque Disponível</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="EstoqueDisponível" placeholder="Ex:5" required>
+            <label class="label-cadastro" for="NomeProduto">Estoque Mínimo</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="EstoqueMínimo" placeholder="Ex:10" required>
+            <label class="label-cadastro" for="NomeProduto" >Estoque Máximo</label>
+            <input type="number"  min="1" max="100" id="myPercent" class="preencher-produtos " name="EstoqueMáximo" placeholder="Ex:100" required>
+        </div>
+    </div >
+    <div  id="Fotos" class="esconder">
+        <div class="drag-area imagemConfig" >
+            <div class="icon" ><img class="tamanho" src="svg/nft.png" alt=""><i class="fas fa-cloud-upload-alt"></i></div>
+            <header>Arraste e solte a imagem aqui para fazer upload</header>
+            <span>OU</span>
+            <button>Selecione o Arquivo</button>
+            <input type="file" hidden>
+          </div>
+    </div >
+    <div  id="PesoDimencoes" class="esconder">
+        <div >
+            <label class="label-cadastro" for="NomeProduto">Peso Líquido</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="Peso Líquido" placeholder="Kg" required>
+        </div>
+        <div>
+            <label class="label-cadastro" for="NomeProduto">Altura</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="Altura" placeholder="Cm" required>
+        </div>
+        <div>
+            <label class="label-cadastro" for="NomeProduto">Profundidade</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="Profundidade" placeholder="Cm" required>
+        </div>
+        <div class="direcao-preencherProdutos">
+            <label class="label-cadastro" for="NomeProduto" >Peso Bruto</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="Peso Bruto" placeholder="Kg" required>
+            <label class="label-cadastro" for="NomeProduto">Largura</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="Largura" placeholder="Cm" required>
+        </div>
+    </div>
+    <div id="DadosFiscais" class="esconder reduzirDistancia">
+        <div>   
+            <label class="label-cadastro" for="NomeProduto">NCM</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="NCM" maxlength="8" placeholder="O NCM é composto por oito dígitos" required>
+            <label class="label-cadastro" for="NomeProduto">CEST</label>
+            <input type="number" class="preencher-produtos" id="NomeProduto" name="CEST" maxlength="7" placeholder="O CEST é composto por sete dígitos" required>
+        </div>
+    </div>
+    </div>
+    <div class= "botoesProduto" >
+        <div>  
+        <button class="btnCprodutos btnCProdutos1" type="submit">Salvar </button>
+        <a class="btnCprodutos btnCProdutos2" href="Produtos.html">Cancelar</a>
+        </div> 
+    </div>
+</form>
+<script src="JAVASCRIPT/cadastroProdutos.js"></script>
+</body>
+</html>

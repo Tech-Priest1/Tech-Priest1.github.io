@@ -146,12 +146,8 @@ span {
     margin-top: -3%;
     padding-left: 10%;
 }
-.tituloPage{
-    padding-top: -10%;
-    padding-left: -70%; 
-}
-
-
+.esconder{display: none;}
+.show {display: block;}
 /*↓↓↓Index.html e aparência dos Botões↓↓↓*/
 .retangulo-cinza{
     background-color: #1C1C20;
@@ -334,7 +330,8 @@ span {
     text-decoration: none;
     display: block;
 }
-.show {display: block;}
+
+
 .totalizantes{
     padding-top: 40px;
     margin-left: -14%;
@@ -416,9 +413,6 @@ span {
 
 .reduzirDistancia{
     margin-bottom: -112px;
-}
-.esconder{
-display: none;
 }
 .dropdown-Menu {
     display: block;

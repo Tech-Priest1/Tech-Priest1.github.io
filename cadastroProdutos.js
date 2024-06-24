@@ -78,20 +78,3 @@ function showFile(){
     dragText.textContent = "Solte a imagem Para enviar arquivo";
   }
 }
-//codigo responsavel pela funcionalidade do dropdown menu em Produtos.html
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}

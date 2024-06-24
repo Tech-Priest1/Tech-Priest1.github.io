@@ -346,7 +346,17 @@ padding-top: 13px;
 .resultadosProd {
     color: #2cb67d;
 }
-.titulosResultados, .resultadosProd {
+.mainProdLista{
+    font-size: 0.5em;
+    margin-top: 0.67em;
+    margin-left: 10em;
+    margin-right: 32em;
+}
+.equalizador2{
+   padding-right:150px; 
+   padding-left:100px;
+}
+.titulosResultados, .resultadosProd, .mainProdLista {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;

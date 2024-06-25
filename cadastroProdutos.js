@@ -29,11 +29,10 @@ input = dropArea.querySelector("input");
 let file;
 
 button.onclick = ()=>{
-  input.click(); 
+  input.click();
 }
 
 input.addEventListener("change", function(){
- 
   file = this.files[0];
   dropArea.classList.add("active");
   showFile(); 
@@ -42,7 +41,7 @@ input.addEventListener("change", function(){
 
 
 dropArea.addEventListener("dragover", (event)=>{
-  event.preventDefault();
+  event.preventDefault(); 
   dropArea.classList.add("active");
   dragText.textContent = "Solte a imagem Para enviar arquivo";
 });
@@ -52,7 +51,6 @@ dropArea.addEventListener("dragleave", ()=>{
   dropArea.classList.remove("active");
   dragText.textContent = "Arraste & solte a imagem aqui para fazer upload";
 });
-
 
 dropArea.addEventListener("drop", (event)=>{
   event.preventDefault(); 

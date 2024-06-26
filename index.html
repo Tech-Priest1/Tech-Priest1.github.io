@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/images/Controle fácil.png" type="image/x-icon">
     <title>Início</title>
@@ -35,33 +35,38 @@
         </li>
     </ul>   
 </header>
-
-<body>
-    <div class="botoesIndex" class="btn">
-        <div class="cadastroDeVenda">
-            <p>Digite o valor vendido hoje:</p>
-            <input type="text" id="valorVenda">
-        </div>
-        <button class="btn-custom" onclick="lancarVenda()">Lançar nova venda</button>
-        <button class="btn-custom">Editar Meta</button>
-        
-        <div class="excluirPedido">
-            <p>Digite o índice do pedido a ser excluído:</p>
-            <input type="text" id="indiceExclusao">
-            <button class="btn-custom" onclick="excluirVenda()">Excluir venda</button>
-        </div>
-   
-    </div> 
-
-    <div class="info-vendas">
-        <p class="titulo-do-circulo">Valor total vendido no dia: </p>
-        <p id="resultadoNegativo"></p>
-        <p class="valor-do-circulo" id="valorTotalVendido">R$ 0,00</p>
-        <span id="totalVendas">0</span><p class="total-de-vendas">vendas</p>
+<div class="conteudoPrincipal">
+    <h1>Início</h1>
+</div>
+<section>
+<div class="botoesIndex" class="btn">
+    <div class="cadastroDeVenda">
+        <p>Digite o valor vendido hoje:</p>
+        <input type="text" id="valorVenda">
     </div>
+    <button class="btn-custom" onclick="lancarVenda()">Lançar nova venda</button>
+    <button class="btn-custom">Editar Meta</button>
 
-    <div class="retangulo-cinza-2"></div>
+    <div class="excluirPedido">
+        <p>Digite o índice do pedido a ser excluído:</p>
+        <input type="text" id="indiceExclusao">
+        <button class="btn-custom" onclick="excluirVenda()">Excluir venda</button>
+    </div>
+</div>
 
+<div class="info-vendas">
+    <p class="titulo-do-circulo">Valor total vendido no dia: </p>
+    <p id="resultadoNegativo"></p>
+    <p class="valor-do-circulo" id="valorTotalVendido">R$ 0,00</p>
+    <span id="totalVendas">0</span>
+    <p class="total-de-vendas">vendas</p>
+</div>
+<div id="grafico" class="imgSizeIndex">
+    <img src="assets/images/Captura.png" alt="Gráfico Interativo">
+</div>
+
+<div class="retangulo-cinza-2"></div>
+</section>
 
   
     <script src="index.js"></script>

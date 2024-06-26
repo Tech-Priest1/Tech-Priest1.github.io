@@ -259,7 +259,12 @@ span {
     text-decoration: none;
     cursor: pointer;
 }
-
+.imgSizeIndex{
+    margin-left: 12%;
+    width: 4%;
+    height: 5%;
+    margin-top: -24%;
+}
 /*↓↓↓Produtos.html↓↓↓*/
 .navegacaoProdutosMain {
     padding-left: 250px;

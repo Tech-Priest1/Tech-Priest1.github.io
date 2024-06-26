@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/images/Controle fácil.png" type="image/x-icon">
-    <meta name="pagina de cadastrar Produtos de um site de de e-commerce">
     <title>Cadastrar Produtos</title>
 </head>
 <header class="navbar">
@@ -70,7 +69,7 @@
         </li>
     </ul>   
 </nav>
-   <form >
+   <form  id="productForm">
     <div class="conteudoPrincipal">
     <div  id="informaçõesGerais">
         <div >
@@ -79,37 +78,37 @@
         </div>
         <div >
             <label class="label-cadastro" for="NomeProduto">Tipo de Unidade</label>
-            <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:Camisa" required>
+            <input type="text" class="preencher-produtos" id="unidade" name="Tipo" placeholder="Ex:Camisa" required>
         </div>
         <div >
             <label class="label-cadastro" for="NomeProduto">Fornecedor</label>
-            <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:VLI MULTIMODAL SA" required>
+            <input type="text" class="preencher-produtos" id="fornecedor" name="Fornecedor" placeholder="Ex:VLI MULTIMODAL SA" required>
         </div>
         <div class="direcao-preencherProdutos">
             <label class="label-cadastro" for="NomeProduto" >Marca</label>
-            <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:Riachuelo" required>
+            <input type="text" class="preencher-produtos" id="marca" name="Marca" placeholder="Ex:Riachuelo" required>
             <label class="label-cadastro" for="NomeProduto">Categoria de Produto</label>
-            <input type="text" class="preencher-produtos" id="NomeProduto" name="NomeProduto" placeholder="Ex:Roupa" required>
+            <input type="text" class="preencher-produtos" id="categoria" name="Categoria" placeholder="Ex:Roupa" required>
         </div>
     </div >
     <div  id="valores" class="esconder">
         <div class="reduzirDistancia">
             <label class="label-cadastro" for="NomeProduto">Valor de Custo</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="ValorCusto" placeholder="0.00" required>
+            <input type="number" class="preencher-produtos" id="valor" name="ValorCusto" placeholder="0.00" required>
             <label class="label-cadastro" for="NomeProduto">Margin de Lucro</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="MargeLucro" placeholder="%" required>
+            <input type="number" class="preencher-produtos" id="margin" name="MargeLucro" placeholder="%" required>
             <label class="label-cadastro" for="NomeProduto" >Valor de Venda</label>
-            <input type="number"  min="1" max="100" id="myPercent" class="preencher-produtos " name="lucro" placeholder="0.00" required>
+            <input type="number"   min="1" max="9999" id="ValorVenda" class="preencher-produtos " name="ValorVenda" placeholder="0.00" required>
         </div>
     </div >
     <div  id="Estoque" class="esconder">
         <div class="reduzirDistancia">
             <label class="label-cadastro" for="NomeProduto">Estoque Disponível</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="EstoqueDisponível" placeholder="Ex:5" required>
+            <input type="number" class="preencher-produtos" id="EstoqueDisponível" name="EstoqueDisponível" placeholder="Ex:10" required>
             <label class="label-cadastro" for="NomeProduto">Estoque Mínimo</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="EstoqueMínimo" placeholder="Ex:10" required>
+            <input type="number" class="preencher-produtos" id="EstoqueMínimo" name="EstoqueMínimo" placeholder="Ex:5" required>
             <label class="label-cadastro" for="NomeProduto" >Estoque Máximo</label>
-            <input type="number"  min="1" max="100" id="myPercent" class="preencher-produtos " name="EstoqueMáximo" placeholder="Ex:100" required>
+            <input type="number"  min="1" max="9999" id="EstoqueMáximo" class="preencher-produtos " name="EstoqueMáximo" placeholder="Ex:100" required>
         </div>
     </div >
     <div  id="Fotos" class="esconder">
@@ -124,29 +123,29 @@
     <div  id="PesoDimencoes" class="esconder">
         <div >
             <label class="label-cadastro" for="NomeProduto">Peso Líquido</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="Peso Líquido" placeholder="Kg" required>
+            <input type="number" class="preencher-produtos" id="Peso Líquido" name="Peso Líquido" placeholder="Kg" required>
         </div>
         <div>
             <label class="label-cadastro" for="NomeProduto">Altura</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="Altura" placeholder="Cm" required>
+            <input type="number" class="preencher-produtos" id="Altura" name="Altura" placeholder="Cm" required>
         </div>
         <div>
             <label class="label-cadastro" for="NomeProduto">Profundidade</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="Profundidade" placeholder="Cm" required>
+            <input type="number" class="preencher-produtos" id="Profundidade" name="Profundidade" placeholder="Cm" required>
         </div>
         <div class="direcao-preencherProdutos">
             <label class="label-cadastro" for="NomeProduto" >Peso Bruto</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="Peso Bruto" placeholder="Kg" required>
+            <input type="number" class="preencher-produtos" id="Peso Bruto" name="Peso Bruto" placeholder="Kg" required>
             <label class="label-cadastro" for="NomeProduto">Largura</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="Largura" placeholder="Cm" required>
+            <input type="number" class="preencher-produtos" id="Largura" name="Largura" placeholder="Cm" required>
         </div>
     </div>
     <div id="DadosFiscais" class="esconder reduzirDistancia">
         <div>   
             <label class="label-cadastro" for="NomeProduto">NCM</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="NCM" maxlength="8" placeholder="O NCM é composto por oito dígitos" required>
+            <input type="number" class="preencher-produtos" id="NCM" name="NCM" maxlength="8" placeholder="O NCM é composto por oito dígitos" required>
             <label class="label-cadastro" for="NomeProduto">CEST</label>
-            <input type="number" class="preencher-produtos" id="NomeProduto" name="CEST" maxlength="7" placeholder="O CEST é composto por sete dígitos" required>
+            <input type="number" class="preencher-produtos" id="CEST" name="CEST" maxlength="7" placeholder="O CEST é composto por sete dígitos" required>
         </div>
     </div>
     </div>

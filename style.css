@@ -184,7 +184,6 @@ span {
 
 .btn-custom {
     font-family: "Lalezar", system-ui;
-    ;
     color: #94a1b2;
     background-color: #1C1C20;
     border: 2px solid #000;
@@ -386,28 +385,24 @@ span {
 }
 
 .mainProdLista {
-    font-size: 0.5em;
+    font-family: "Lalezar", system-ui;
+    font-size: 1em;
     margin-top: 0.67em;
     margin-left: 10em;
-    margin-right: 32em;
+    margin-right: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+    display: flex;
+    justify-content: space-around;
 }
 
-.equalizador2 {
-    padding-right: 150px;
-    padding-left: 100px;
-}
-
-.titulosResultados,
-.resultadosProd,
-.mainProdLista {
+.titulosResultados, .resultadosProd {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
-
 }
 
-.tituloResultadoProd,
-.resultadoProd {
+.tituloResultadoProd, .resultadoProd {
     margin: 0 10px;
 }
 
@@ -693,57 +688,56 @@ span {
     margin-left: 20%;
     margin-right: 14%;
 }
-   
-/*↓↓↓Relatorios.html↓↓↓*/
-.navegacaoRelatorios ul {
+   /*↓↓↓Relatorios.html↓↓↓*/
+   .navegacaoRelatorios ul {
     list-style-type: none;
     padding-left: 360px;
     margin-top: 50px;
     overflow: hidden;
-}
-.navegacaoRelatorios a{
-    color:#fefefe;
-    text-decoration: none;
-    padding: 20px 40px;
-    text-align: center;
+   }
+   .navegacaoRelatorios a{
+       color:#fefefe;
+       text-decoration: none;
+       padding: 20px 40px;
+       text-align: center;
           
-}
-.navegacaoRelatorios li{
-    float:left;
-    color:#94a1b2;
-    background-color: #1C1C20;
-    border: 1px solid #000;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s; 
-    padding: 15px 20px;
+   }
+   .navegacaoRelatorios li{
+       float:left;
+       color:#94a1b2;
+       background-color: #1C1C20;
+       border: 1px solid #000;
+       border-radius: 3px;
+       cursor: pointer;
+       transition: background-color 0.3s; 
+       padding: 15px 20px;
       
- }
-.navegacaoRelatorios li a:hover:not(.active) {
-    color: #7f5af0;
+   }
+   .navegacaoRelatorios li a:hover:not(.active) {
+       color: #7f5af0;
      
      
-}
-.navegacaoRelatorios li a.active {
-    background-color: #28282985;
-    color: #fffffe;
- }
+   }
+   .navegacaoRelatorios li a.active {
+       background-color: #28282985;
+       color: #fffffe;
+   }
 
-.espacamentoRelatorios{
+   .espacamentoRelatorios{
     padding-top: 20px;
-}
+   }
 
-.espacamentoConteudoRelatorio{
+   .espacamentoConteudoRelatorio{
     padding-left: 250px;
 
-}
-.tituloResultadoRela{
+   }
+   .tituloResultadoRela{
     margin: 0 10px;
 
-}
-.tamanhoGraficosRela{
+   }
+   .tamanhoGraficosRela{
     height: 70%;
     width: 70%;
     padding-left: 14.5%;
     
-}
+   }

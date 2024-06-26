@@ -15,3 +15,37 @@ function myFunction() {
       }
     }
   }
+   //deletar localStorage
+  function deleteFormData() {
+    
+    localStorage.removeItem('formDataValues');
+     
+      const formDataContainer = document.getElementById('formData');
+      formDataContainer.textContent = 'Produto não cadastrado.'; 
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    // Retrieve stored data from localStorage
+    const formDataValues = JSON.parse(localStorage.getItem('formDataValues'));
+
+    // Define the specific fields you want to display
+    const fieldsToDisplay = [
+       'NomeProduto', 'Categoria', 'ValorVenda', 'EstoqueDisponível',
+    'ValorCusto', 'EstoqueMínimo', 'Fornecedor', 'NCM'
+    ];
+
+    const formDataContainer = document.getElementById('formData');
+
+    if (formDataValues) {
+        fieldsToDisplay.forEach(field => {
+            const value = formDataValues[field];
+            if (value !== undefined) {
+                const p = document.createElement('p');
+                p.textContent = value;
+                formDataContainer.appendChild(p);
+            }
+        });
+    } else {
+        formDataContainer.textContent = 'Produto não cadastrado.';
+    }
+});

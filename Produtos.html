@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/images/Controle fácil.png" type="image/x-icon">
-    <meta name="pagina de Produtos de um site de de e-commerce"  content="width=1280,initial-scale=1">
     <title>Produtos</title>
 </head>
 <header class="navbar">
@@ -47,7 +46,7 @@
             <a class = "btn-custom" href="cadastroProdutos.html">Cadastrar Produtos</a>
         </div>
     </div>
-        <nav class="navegacaoProdutosMain equalizador" >
+        <nav class="navegacaoProdutosMain equalizador">
             <ul>
                 <li>
                     <a href="#.html"><img class="IconeProdutosMain" src="assets/images/filter.png" alt="Filtros">
@@ -67,13 +66,13 @@
                 <li>
                     <div class="dropdown">
                         <a href="#.html" class="dropbtn" onclick="myFunction()"><img class="dropbtn IconeProdutosMain" src="assets/images/MoreActions.svg" alt="Mais ações"> Mostrar Mais</a>
-                        <div id="myDropdown" class="dropdown-content">
+                        <div id="myDropdown" class="dropdown-content ">
                           <a href="#"><img class="IconeProdutosDropMenu" src="assets/images/icons8-pencil-30.png">Reajustar Preço de Venda</a>
                           <a href="#"><img class="IconeProdutosDropMenu" src="assets/images/icons8-pencil-30.png">Reajustar NCM/CEST</a>
                           <a href="#"><img class="IconeProdutosDropMenu" src="assets/images/icons8-pencil-30.png">Reajustar Categoria</a>
                           <a href="#"><img class="IconeProdutosDropMenu" src="assets/images/icons8-pencil-30.png">Atualizar Peso e Dimenções</a>
                           <a href="#"><img class="IconeProdutosDropMenu" src="assets/images/icons8-pencil-30.png">Reajustar Marca</a>
-                          <a href="#"><img class="IconeProdutosDropMenu" src="assets/images/icons8-trash-24.png">Excluir Selecionados</a>
+                          <a href="#" onclick="deleteFormData()"><img class="IconeProdutosDropMenu" src="assets/images/icons8-trash-24.png">Excluir Selecionados</a>
                         </div>
                       </div>
                 </li>
@@ -115,15 +114,7 @@
                 </li>
             </ul>   
         </nav>
-        <div class="mainProdLista">
-            <h2 class="tituloResultadoProd equalizador2">Camisa Vermelha Avengers</h2>
-            <h2 class="tituloResultadoProd">Roupa/Camisa</h2>
-            <h2 class="tituloResultadoProd">70.00</h2>
-            <h2 class="tituloResultadoProd">10</h2>
-            <h2 class="tituloResultadoProd">50.00</h2>
-            <h2 class="tituloResultadoProd">5</h2>
-            <h2 class="tituloResultadoProd">Riachuelo</h2>
-            <h2 class="tituloResultadoProd">12345678</h2>
+        <div class="mainProdLista" id="formData">
         </div>
         <div class= "botoesProduto-nf">
             <div>  

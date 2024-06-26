@@ -76,3 +76,55 @@ function showFile(){
     dragText.textContent = "Solte a imagem Para enviar arquivo";
   }
 }
+document.addEventListener('DOMContentLoaded', () => {
+  // Retrieve stored data from localStorage
+  const formDataValues = JSON.parse(localStorage.getItem('formDataValues'));
+
+  // Define the specific fields you want to display
+  const fieldsToDisplay = [
+      'NomeProduto', 'Categoria', 'ValorVenda', 'EstoqueDisponível',
+    'ValorCusto', 'EstoqueMínimo', 'Fornecedor', 'NCM'];
+
+  const formDataContainer = document.getElementById('formData');
+
+  if (formDataValues) {
+      fieldsToDisplay.forEach(field => {
+          const value = formDataValues[field];
+          if (value !== undefined) {
+              const p = document.createElement('p');
+              p.textContent = value;
+              // Add a class to differentiate NomeProduto for specific styling
+              if (field === 'NomeProduto') {
+                  p.classList.add('nome-produto');
+              }
+              formDataContainer.appendChild(p);
+          }
+      });
+  } else {
+      formDataContainer.textContent = 'Produto não cadastrado.';
+  }
+});
+
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const formData = new FormData(event.target);
+  const includedFields = [
+    'NomeProduto', 'Categoria', 'ValorVenda', 'EstoqueDisponível',
+    'ValorCusto', 'EstoqueMínimo', 'Fornecedor', 'NCM'
+  ];
+
+  const filteredData = {};
+  formData.forEach((value, key) => {
+    if (includedFields.includes(key)) {
+      filteredData[key] = value;
+    }
+  });
+
+  localStorage.setItem('formDataValues', JSON.stringify(filteredData));
+  window.location.href = 'Produtos.html';
+}
+
+const form = document.querySelector('form');
+form.addEventListener('submit', handleSubmit);
